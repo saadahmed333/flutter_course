@@ -85,4 +85,27 @@ void main () {
   a = 5;
   int y = a = a + 1; // y gets new value (6), a becomes 6
   print('y = $y, a = $a');
+
+//   ADDITIONALLY
+// USE 10 LIST,MAP METHODS.
+
+  List<int> numbers6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  numbers6.add(11);
+  print("Original list: $numbers6");
+  numbers6.remove(11);
+  print("Original list: $numbers6");
+  numbers6.insert(0, 0);
+  print("Original list: $numbers6");
+  numbers6.removeAt(0);
+  print("Original list: $numbers6");
+  numbers6.removeRange(0, 5);
+  print("Original list: $numbers6");
+  numbers6.removeWhere((number) => number % 2 == 0);
+  print("Original list: $numbers6");
+  numbers6.retainWhere((number) => number % 2 == 0);
+  print("Original list: $numbers6");
+  numbers6.clear();
+  print("Original list: $numbers6");
+  print("Is list empty: ${numbers6.isEmpty}");
+  print("Is list empty: ${numbers6.isNotEmpty}");
 }

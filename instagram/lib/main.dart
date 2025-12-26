@@ -21,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
 
   static final List<Widget> _screens = <Widget>[
     const HomeView(),
-    const ReelsView(),
+    const Reelsview(),
     const ChatsView(),
     const SearchView(),
     const ProfileView(),
